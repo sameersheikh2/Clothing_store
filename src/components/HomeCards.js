@@ -3,8 +3,8 @@ import cover from "./style/images/HomeCover.jpg";
 import shirts from "./style/images/shirt.jpg";
 import jeans from "./style/images/jeans.jpg";
 import tshirts from "./style/images/tshirt.jpg";
+import shoes from "./style/images/shoes.jpg";
 import "./style/HomeCard.css";
-
 
 const HomeCards = () => {
   return (
@@ -12,7 +12,13 @@ const HomeCards = () => {
       <div className="card-main">
         <div className="card-1">
           <img src={cover} className="image" alt="" />
-          <h2>Welcome to our page</h2>
+          <h2>
+            Welcome <br />
+            To <br />
+            Our
+            <br />
+            Store..
+          </h2>
         </div>
       </div>
       <div className="container">
@@ -26,14 +32,13 @@ const HomeCards = () => {
         </div>
         <div className="container_tshirt">
           <img className="tshirt" alt="" src={tshirts} />
-          <span>Tshirts</span>
+          <span>T-shirts</span>
         </div>
-        <div className="container_tshirt">
-          <img className="tshirt" alt="" src={tshirts} />
-          <span>Tshirts</span>
+        <div className="container_shoes">
+          <img className="shoes" alt="" src={shoes} />
+          <span>Shoes</span>
         </div>
       </div>
-      
     </Fragment>
   );
 };
